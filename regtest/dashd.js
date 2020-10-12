@@ -7,7 +7,7 @@ var index = require('..');
 var log = index.log;
 
 var chai = require('chai');
-var dashcore = require('@dashevo/dashcore-lib');
+var dashcore = require('@xazab/xazabcore-lib');
 var BN = dashcore.crypto.BN;
 var async = require('async');
 var rimraf = require('rimraf');
@@ -17,7 +17,7 @@ var dashd;
 var should = chai.should();
 var assert = chai.assert;
 var sinon = require('sinon');
-var DashdRPC = require('@dashevo/dashd-rpc');
+var DashdRPC = require('@xazab/dashd-rpc');
 var transactionData = [];
 var blockHashes = [];
 var utxos;

@@ -9,13 +9,13 @@ var log = index.log;
 log.debug = function() {};
 
 var chai = require('chai');
-var dashcore = require('@dashevo/dashcore-lib');
+var dashcore = require('@xazab/xazabcore-lib');
 var rimraf = require('rimraf');
 var node;
 
 var should = chai.should();
 
-var DashdRPC = require('@dashevo/dashd-rpc');
+var DashdRPC = require('@xazab/dashd-rpc');
 var index = require('..');
 var Transaction = dashcore.Transaction;
 var DashcoreNode = index.Node;

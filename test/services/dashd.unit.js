@@ -5,7 +5,7 @@ var path = require('path');
 var EventEmitter = require('events').EventEmitter;
 var should = require('chai').should();
 var crypto = require('crypto');
-var dashcore = require('@dashevo/dashcore-lib');
+var dashcore = require('@xazab/xazabcore-lib');
 var _ = dashcore.deps._;
 var sinon = require('sinon');
 var proxyquire = require('proxyquire');
@@ -421,7 +421,7 @@ describe('Dash Service', function() {
       var config = {
         node: {
           network: dashcore.Networks.testnet,
-          configPath: '/tmp/.dashcore/dashcore-node.json'
+          configPath: '/tmp/.dashcore/xazabcore-node.json'
         },
         spawn: {
           datadir: './data',
