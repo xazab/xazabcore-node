@@ -3,7 +3,7 @@
 var should = require('chai').should();
 var sinon = require('sinon');
 var proxyquire = require('proxyquire');
-var DashService = require('../../lib/services/dashd');
+var XazabService = require('../../lib/services/xazabd');
 var index = require('../../lib');
 var log = index.log;
 
@@ -23,8 +23,8 @@ describe('#start', function() {
       var node;
       var TestNode = function(options) {
         options.services[0].should.deep.equal({
-          name: 'dashd',
-          module: DashService,
+          name: 'xazabd',
+          module: XazabService,
           config: {
             spawn: {
               datadir: './data'
@@ -48,10 +48,10 @@ describe('#start', function() {
         path: __dirname,
         config: {
           services: [
-            'dashd'
+            'xazabd'
           ],
           servicesConfig: {
-            dashd: {
+            xazabd: {
               spawn: {
                 datadir: './data'
               }
@@ -91,8 +91,8 @@ describe('#start', function() {
       var node;
       var TestNode = function(options) {
         options.services[0].should.deep.equal({
-          name: 'dashd',
-          module: DashService,
+          name: 'xazabd',
+          module: XazabService,
           config: {
             param: 'test',
             spawn: {
@@ -116,10 +116,10 @@ describe('#start', function() {
         path: __dirname,
         config: {
           services: [
-            'dashd'
+            'xazabd'
           ],
           servicesConfig: {
-            'dashd': {
+            'xazabd': {
               param: 'test',
               spawn: {
                 datadir: './data'
