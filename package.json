@@ -46,8 +46,8 @@
     "xazabd"
   ],
   "dependencies": {
-    "@xazab/xazabcore-lib": "^0.18.12",
-    "@xazab/xazabd-rpc": "^2.0.0",
+    "@xazab/xazabcore-lib": "https://github.com/xazab/xazabcore-lib.git",
+    "@xazab/xazabd-rpc": "^2.0.2",
     "async": "^2.6.2",
     "body-parser": "^1.19.0",
     "colors": "^1.3.3",
@@ -68,7 +68,7 @@
     "utf-8-validate": "~5.0.2"
   },
   "devDependencies": {
-    "@xazab/xazabcore-p2p": "^1.1.9",
+    "@xazab/xazabcore-p2p": "https://github.com/xazab/xazabcore-p2p.git",
     "benchmark": "2.1.4",
     "chai": "^4.2.0",
     "coveralls": "^3.0.4",
