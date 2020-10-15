@@ -46,7 +46,7 @@
     "xazabd"
   ],
   "dependencies": {
-    "@xazab/xazabcore-lib": "https://github.com/xazab/xazabcore-lib.git",
+    "@xazab/xazabcore-lib": "^0.18.12",
     "@xazab/xazabd-rpc": "^2.0.2",
     "async": "^2.6.2",
     "body-parser": "^1.19.0",
