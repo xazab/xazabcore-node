@@ -68,7 +68,7 @@
     "utf-8-validate": "~5.0.2"
   },
   "devDependencies": {
-    "@xazab/xazabcore-p2p": "https://github.com/xazab/xazabcore-p2p.git",
+    "@xazab/xazabcore-p2p": "^1.2.0",
     "benchmark": "2.1.4",
     "chai": "^4.2.0",
     "coveralls": "^3.0.4",
